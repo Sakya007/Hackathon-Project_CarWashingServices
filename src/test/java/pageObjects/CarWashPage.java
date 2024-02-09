@@ -107,20 +107,26 @@ public class CarWashPage extends BasePage {
 		}
     }
     
-    public void writeReview() throws InterruptedException {
+    public void writeReviewReportShare() throws InterruptedException, IOException {
+    	
+    	ScreenShots sc = new ScreenShots(driver);
+    	
     	WebElement reviewButton= driver.findElement(By.xpath(before_review +randNum +after_review));
+    	highlightElement(reviewButton);
     	reviewButton.click();
     	explicitWait(reviewTextBox,5);
     	reviewTextBox.sendKeys("Satisfactory");
-    }
+    	Thread.sleep(3000);
+    	sc.screenshot("ReviewPage");
+		driver.navigate().back();
     
-    public void shareFB() throws IOException, InterruptedException {
-    	ScreenShots sc = new ScreenShots(driver);
     	WebElement shareButton = driver.findElement(By.xpath(before_share +randNum +after_share));
+    	highlightElement(shareButton);
     	shareButton.click();
     	Thread.sleep(3000);
     	
     	WebElement fbShareButton = driver.findElement(By.xpath(before_fb + randNum + after_fb));
+    	highlightElement(fbShareButton);
     	fbShareButton.click();
     	Set<String> wid = driver.getWindowHandles();
     	List<String> winid = new ArrayList<String>(wid);
@@ -144,36 +150,32 @@ public class CarWashPage extends BasePage {
     			driver.close();
     		}
     		driver.switchTo().window(parent);
-    }
-    
-    public void shareTwitter() throws InterruptedException, IOException {
-    	ScreenShots sc = new ScreenShots(driver);
-    	WebElement shareButton = driver.findElement(By.xpath(before_share +randNum +after_share));
+    	
     	shareButton.click();
     	Thread.sleep(2000);
     	WebElement twShareButton = driver.findElement(By.xpath(before_tw + randNum + after_tw));
+    	highlightElement(twShareButton);
     	twShareButton.click();
     	
-    	Set<String> wid = driver.getWindowHandles();
-    	List<String> winid = new ArrayList<String>(wid);
-    	String parent = winid.get(0);
-    	String child = winid.get(1);
+    	Set<String> wid2 = driver.getWindowHandles();
+    	List<String> winid2 = new ArrayList<String>(wid2);
+    	String parent2 = winid2.get(0);
+    	String child2 = winid2.get(1);
 
     	Thread.sleep(2000);
 
-	    driver.switchTo().window(child);
+	    driver.switchTo().window(child2);
 	    Thread.sleep(1000);
 	    sc.screenshot("Twitter");
 	    Thread.sleep(1000);
 	    driver.close();
 
-    	driver.switchTo().window(parent);
+    	driver.switchTo().window(parent2);
     	
-    }
-    
-    public void reportButton() throws InterruptedException, IOException {
-    	ScreenShots sc = new ScreenShots(driver);
-    	driver.findElement(By.xpath(before_report + randNum + after_report)).click();
+    	
+    	WebElement reportButton = driver.findElement(By.xpath(before_report + randNum + after_report));
+    	highlightElement(reportButton);
+    	reportButton.click();
     	Thread.sleep(1000);
     	reportTextArea.sendKeys("Report");
     	Thread.sleep(1000);

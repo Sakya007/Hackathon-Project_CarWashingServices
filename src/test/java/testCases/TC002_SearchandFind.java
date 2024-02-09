@@ -27,19 +27,19 @@ public class TC002_SearchandFind extends TC001_Location{
 //		sc.screenshot("CarWashPage.png");
 		cp.displayDetails();
 		logger.info("--//Top 5 car wash services displyed//--");
-		cp.writeReview();
-		Thread.sleep(3000);
-		logger.info("--//Review given//--");
-		sc.screenshot("ReviewPage");
-		driver.navigate().back();
+		//cp.writeReview();
+//		sc.screenshot("ReviewPage");
+//		driver.navigate().back();
 	}
 	
 	@Test(priority=5,groups= {"regression","master"})
 	public void shareDetails() throws InterruptedException, IOException {
 		CarWashPage cp = new CarWashPage(driver);
-		cp.shareFB();
-		cp.shareTwitter();
-		cp.reportButton();
+		//cp.shareFB();
+		//cp.shareTwitter();
+		//cp.reportButton();
+		cp.writeReviewReportShare();
+		logger.info("--//Review given//--");
 		logger.info("--//Shared and Reported//--");
 		cp.clickBack();
 	}
