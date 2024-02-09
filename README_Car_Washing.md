@@ -32,7 +32,7 @@ Capture warning message
 Extract menu items & store in collections
 Navigating back to home page
 
-#Selenium Automation Testing Project: Identify New Bikes
+#Selenium Automation Testing Project: Identify Car Wash Services
  
 ##Project Overview
 This Selenium automation testing project focuses on automating tasks on asklaila.com.

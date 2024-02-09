@@ -41,16 +41,19 @@ public class GymandSearchPage extends BasePage{
 		Thread.sleep(2000);
 		ss.screenshot("SearchPage");
 		searchbox.sendKeys("Car Washing Services");
+		highlightElement(findButton);
 		findButton.click();
 	}
 	
 	public void clickFreeListing() {
+		highlightElement(freeListingButton);
 		freeListingButton.click();
 	}
 	
 	public void selectGym() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,1800)","");
+		highlightElement(gymGrid);
 		gymGrid.click();
 	}
 	

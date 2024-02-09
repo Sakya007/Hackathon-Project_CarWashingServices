@@ -32,6 +32,7 @@ public class FreeListingPage extends BasePage {
 	
 	
 	public void clickFreeListingLogin() {
+		highlightElement(freeListingLogin);
 		freeListingLogin.click();
 	}
 	
@@ -44,6 +45,7 @@ public class FreeListingPage extends BasePage {
 	}
 	
 	public void clickLoginButton() throws InterruptedException {
+		highlightElement(loginButton);
 		loginButton.click();
 		Thread.sleep(2000);
 	}
@@ -54,6 +56,7 @@ public class FreeListingPage extends BasePage {
 	}
 	
 	public void cross() throws InterruptedException {
+		highlightElement(crossButton);
 		crossButton.click();
 		Thread.sleep(1000);
 		

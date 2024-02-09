@@ -43,6 +43,7 @@ public class LocationPage extends BasePage {
 		js.executeScript("window.scrollBy(0,300)","");
 		Thread.sleep(3000);
 		ss.screenshot("City");
+		highlightElement(Bangalore);
 		Bangalore.click();
 		Thread.sleep(2000);
 	}

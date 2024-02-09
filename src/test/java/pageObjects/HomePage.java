@@ -36,6 +36,7 @@ public class HomePage extends BasePage{
 	public void roamingClick() throws InterruptedException {
 
 		closePopup();
+		highlightElement(locationButton);
 		locationButton.click();
 		
 	}
@@ -47,6 +48,7 @@ public class HomePage extends BasePage{
 		js.executeScript("window.scrollBy(0,300)","");
 		Thread.sleep(1000);
 		ss.screenshot("Country");
+		highlightElement(IndiaTile);
 		IndiaTile.click();
 		Thread.sleep(1000);
 	}

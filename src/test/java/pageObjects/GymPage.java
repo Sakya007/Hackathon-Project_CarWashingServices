@@ -19,6 +19,7 @@ public class GymPage extends BasePage {
 	@FindBy(xpath = "//div[@id='searchSubCategory']//ul[@class='dropdown-menu pad0']//li") List<WebElement> categories;
 	
 	public void clickSubCategory() {
+		highlightElement(gymSubCategory);
 		gymSubCategory.click();
 	}
 	
