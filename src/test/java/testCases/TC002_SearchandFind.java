@@ -22,7 +22,7 @@ public class TC002_SearchandFind extends TC001_Location{
 	@Test(priority=4,groups= {"regression","master"})
 	public void carWashDetails() throws InterruptedException, IOException {
 		CarWashPage cp = new CarWashPage(driver);
-		ScreenShots sc = new ScreenShots(driver);
+//		ScreenShots sc = new ScreenShots(driver);
 		Thread.sleep(3000);
 //		sc.screenshot("CarWashPage.png");
 		cp.displayDetails();

@@ -11,7 +11,6 @@
       <class name="testCases.TC004_GymCategory">
         <methods>
           <include name="searchCarWash"/>
-          <include name="locationCity"/>
           <include name="tearDown"/>
           <include name="shareDetails"/>
           <include name="carWashDetails"/>

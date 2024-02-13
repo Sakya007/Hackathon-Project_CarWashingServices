@@ -1,25 +1,16 @@
-12:20:49.901 [main] INFO  testCases.TC004_GymCategory - --//Review given//--
-12:21:36.350 [main] INFO  testCases.TC004_GymCategory - --//Shared and Reported//--
-12:21:45.301 [main] INFO  testCases.TC004_GymCategory - --//Free Listing Done//--
-12:21:52.366 [main] INFO  testCases.TC004_GymCategory - --//Gym Sub Categories taken//--
-12:25:33.959 [main] INFO  testCases.TC004_GymCategory - --//Country chosen//--
-12:25:44.879 [main] INFO  testCases.TC004_GymCategory - --//City chosen//--
-12:26:09.938 [main] INFO  testCases.TC004_GymCategory - --//Top 5 car wash services displyed//--
-12:26:15.925 [main] INFO  testCases.TC004_GymCategory - --//Review given//--
-12:27:06.126 [main] INFO  testCases.TC004_GymCategory - --//Shared and Reported//--
-12:27:15.833 [main] INFO  testCases.TC004_GymCategory - --//Free Listing Done//--
-12:27:22.582 [main] INFO  testCases.TC004_GymCategory - --//Gym Sub Categories taken//--
-12:41:33.928 [main] INFO  testCases.TC004_GymCategory - --//Country chosen//--
-12:41:53.002 [main] INFO  testCases.TC004_GymCategory - --//City chosen//--
-12:42:35.471 [main] INFO  testCases.TC004_GymCategory - --//Top 5 car wash services displyed//--
-12:43:17.219 [main] INFO  testCases.TC004_GymCategory - --//Review given//--
-12:43:17.220 [main] INFO  testCases.TC004_GymCategory - --//Shared and Reported//--
-12:43:25.692 [main] INFO  testCases.TC004_GymCategory - --//Free Listing Done//--
-12:43:33.540 [main] INFO  testCases.TC004_GymCategory - --//Gym Sub Categories taken//--
-12:50:53.373 [main] INFO  testCases.TC004_GymCategory - --//Country chosen//--
-12:51:16.534 [main] INFO  testCases.TC004_GymCategory - --//City chosen//--
-12:51:59.785 [main] INFO  testCases.TC004_GymCategory - --//Top 5 car wash services displyed//--
-12:52:47.781 [main] INFO  testCases.TC004_GymCategory - --//Review given//--
-12:52:47.781 [main] INFO  testCases.TC004_GymCategory - --//Shared and Reported//--
-12:52:56.464 [main] INFO  testCases.TC004_GymCategory - --//Free Listing Done//--
-12:53:04.079 [main] INFO  testCases.TC004_GymCategory - --//Gym Sub Categories taken//--
+10:20:01.986 [main] INFO  testCases.TC004_GymCategory - --//Country chosen//--
+10:20:22.507 [main] INFO  testCases.TC004_GymCategory - --//City chosen//--
+11:42:27.350 [main] INFO  testCases.TC004_GymCategory - --//Country chosen//--
+11:42:48.052 [main] INFO  testCases.TC004_GymCategory - --//City chosen//--
+11:43:30.311 [main] INFO  testCases.TC004_GymCategory - --//Top 5 car wash services displyed//--
+11:44:10.883 [main] INFO  testCases.TC004_GymCategory - --//Review given//--
+11:44:10.884 [main] INFO  testCases.TC004_GymCategory - --//Shared and Reported//--
+11:44:18.819 [main] INFO  testCases.TC004_GymCategory - --//Free Listing Done//--
+11:44:25.754 [main] INFO  testCases.TC004_GymCategory - --//Gym Sub Categories taken//--
+11:48:02.649 [main] INFO  testCases.TC004_GymCategory - --//Country chosen//--
+11:48:32.497 [main] INFO  testCases.TC004_GymCategory - --//City chosen//--
+11:49:27.527 [main] INFO  testCases.TC004_GymCategory - --//Top 5 car wash services displyed//--
+11:50:38.295 [main] INFO  testCases.TC004_GymCategory - --//Review given//--
+11:50:38.295 [main] INFO  testCases.TC004_GymCategory - --//Shared and Reported//--
+11:50:46.464 [main] INFO  testCases.TC004_GymCategory - --//Free Listing Done//--
+11:50:54.424 [main] INFO  testCases.TC004_GymCategory - --//Gym Sub Categories taken//--
