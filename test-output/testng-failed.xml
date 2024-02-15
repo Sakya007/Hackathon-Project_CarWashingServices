@@ -10,15 +10,11 @@
     <classes>
       <class name="testCases.TC004_GymCategory">
         <methods>
-          <include name="searchCarWash"/>
-          <include name="locationCity"/>
           <include name="tearDown"/>
           <include name="shareDetails"/>
           <include name="carWashDetails"/>
-          <include name="clickfreelisting"/>
           <include name="freeListingLogin"/>
           <include name="setup"/>
-          <include name="locationCountry"/>
           <include name="displayCategories"/>
           <include name="clickGym"/>
         </methods>
