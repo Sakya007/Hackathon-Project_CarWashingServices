@@ -27,14 +27,12 @@ public class ScreenShots extends BaseClass {
 			File sourceFile = tshot.getScreenshotAs(OutputType.FILE);
 			filePath=System.getProperty("user.dir")+"\\Screenshots\\"+a+".png";
 			File targetFile = new File(filePath);
-			
 			FileUtils.copyFile(sourceFile, targetFile);
 		}
 		catch(Exception e) {
 			e.getMessage();
 		}
 		return filePath;
-
 	}
 
 }

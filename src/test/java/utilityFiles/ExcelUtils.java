@@ -22,7 +22,8 @@ public class ExcelUtils {
 	public static XSSFRow row;			 // Excel Row Global Variable
 	public static XSSFCell cell;		 // Excel Cell Global Variable
 	public static CellStyle style;   	 // Excel style Global Variable
-	//count rows present in excel sheet
+	
+	//Counting rows present in excel sheet
 	public int getRowCount(String xlfile,String xlsheet) throws IOException 
 	{
 		fi=new FileInputStream(xlfile);
@@ -45,7 +46,7 @@ public class ExcelUtils {
 		fi.close();
 		return cellcount;
 	}
-	// read data from excel sheet method
+	//Reading data from excel sheet method
 	public String getCellData(String xlfile,String xlsheet,int rownum,int colnum) throws IOException
 	{
 		fi=new FileInputStream(xlfile);
@@ -56,7 +57,6 @@ public class ExcelUtils {
 		String data;
 		try 
 		{
-			//data=cell.toString();
 			DataFormatter formatter = new DataFormatter();
             data = formatter.formatCellValue(cell);
             return data;
@@ -70,7 +70,7 @@ public class ExcelUtils {
 		return data;
 	}
 
-	// write data on excel sheet cells 
+	//Writing data on excel sheet cells 
 	public void setCellData(String xlfile,String xlsheet,int rownum,int colnum,String data) throws IOException
 	{
 		fi=new FileInputStream(xlfile);
@@ -85,7 +85,7 @@ public class ExcelUtils {
 		fi.close();
 		fo.close();
 	}
-	// filling green colour in cells 
+	//Filling green colour in cells 
 	public void fillGreenColor(String xlfile,String xlsheet,int rownum,int colnum) throws IOException
 	{
 		fi=new FileInputStream(xlfile);
@@ -103,7 +103,8 @@ public class ExcelUtils {
 		fi.close();
 		fo.close();
 	}
-	//filling red colour in cells
+	
+	//Filling red colour in cells
 	public void fillRedColor(String xlfile,String xlsheet,int rownum,int colnum) throws IOException
 	{
 		fi=new FileInputStream(xlfile);

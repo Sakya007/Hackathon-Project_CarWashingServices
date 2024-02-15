@@ -32,7 +32,7 @@ public class BaseClass {
 	@BeforeTest(groups= {"sanity","regression","Master"})
 	@Parameters({"os","browser"})
 	public void setup(String os,String br) throws IOException {
-		//loading properties file
+		//Loading properties file
 		FileReader file = new FileReader(".//src//test//resources//config.properties");
 		p = new Properties();
 		p.load(file);

@@ -18,11 +18,13 @@ public class GymPage extends BasePage {
 	@FindBy(xpath = "//div[@id='searchSubCategory']//button") WebElement gymSubCategory;
 	@FindBy(xpath = "//div[@id='searchSubCategory']//ul[@class='dropdown-menu pad0']//li") List<WebElement> categories;
 	
+	//Clicking on the SubCategories dropdown
 	public void clickSubCategory() {
 		highlightElement(gymSubCategory);
 		gymSubCategory.click();
 	}
 	
+	//Printing all the SubCategories
 	public void subCategories() throws IOException{
 		ExcelUtils excel = new ExcelUtils();
 		String xlfile = System.getProperty("user.dir") + "\\testData\\testdataexcel.xlsx";

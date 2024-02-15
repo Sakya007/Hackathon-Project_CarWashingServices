@@ -20,6 +20,7 @@ public class LocationPage extends BasePage {
 	@FindBy(xpath = "(//div[@class='col-xs-12 col-sm-6 col-md-4 col-lg-4'])[2]") WebElement Bangalore;
 	@FindBy(xpath = "//div[@id='pushengage-subscription-overlay-close-button']") WebElement popup;
 	
+	//Closing the PopUp
 	public void closePopup(){
 		try {
 		if(popup.isDisplayed()) {
@@ -29,24 +30,19 @@ public class LocationPage extends BasePage {
 		}
 		catch(Exception e) {
 			e.getMessage();
-		}
-
-		
-		
+		}		
 	}
 	
+	//Clicking on Bangalore
 	public void clickBangalore() throws InterruptedException, IOException {
-//		BaseClass b = new BaseClass();
 		ScreenShots ss = new ScreenShots(driver);
 		closePopup();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,300)","");
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		ss.screenshot("City");
 		highlightElement(Bangalore);
 		Bangalore.click();
 		Thread.sleep(2000);
 	}
-	
-
 }

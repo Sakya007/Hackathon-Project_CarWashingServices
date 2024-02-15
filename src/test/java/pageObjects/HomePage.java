@@ -21,6 +21,8 @@ public class HomePage extends BasePage{
 	@FindBy(xpath = "(//button[@type='button' and text()='Nevermind! I am in a roaming mode.'])[1]") WebElement locationButton;
 	@FindBy(xpath = "(//div[@class='col-xs-12 col-sm-6 col-md-4 col-lg-4'])[1]") WebElement IndiaTile;
 	@FindBy(xpath = "//div[@id='pushengage-subscription-overlay-close-button']") WebElement popup;
+	
+	//Closing the PopUp
 	public void closePopup(){
 		try {
 		if(popup.isDisplayed()) {
@@ -32,7 +34,8 @@ public class HomePage extends BasePage{
 			e.getMessage();
 		}		
 	}
-
+	
+	//Clicking on Roaming Mode
 	public void roamingClick() throws InterruptedException {
 
 		closePopup();
@@ -41,9 +44,9 @@ public class HomePage extends BasePage{
 		
 	}
 	
+	//Clicking on India
 	public void IndiaClick() throws InterruptedException, IOException {
         ScreenShots ss = new ScreenShots(driver);
-        
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,300)","");
 		Thread.sleep(1000);

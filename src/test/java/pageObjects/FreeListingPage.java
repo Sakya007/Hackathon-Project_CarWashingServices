@@ -18,6 +18,7 @@ public class FreeListingPage extends BasePage {
 	@FindBy(xpath = "//div[@class='modal-header loginTitle']//button[@type='button']") WebElement crossButton;
 	@FindBy(xpath = "//div[@id='pushengage-subscription-overlay-close-button']") WebElement popup;
 	
+	//Closing the PopUp
 	public void closePopup(){
 		try {
 		if(popup.isDisplayed()) {
@@ -31,6 +32,7 @@ public class FreeListingPage extends BasePage {
 	}
 	
 	
+	//Clicking on Free Listing login button
 	public void clickFreeListingLogin() {
 		highlightElement(freeListingLogin);
 		freeListingLogin.click();

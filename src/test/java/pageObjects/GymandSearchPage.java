@@ -21,6 +21,7 @@ public class GymandSearchPage extends BasePage{
 	@FindBy(xpath = "//div[@class='col-xs-6 col-sm-6 col-md-3 col-lg-3 pad0'][34]") WebElement gymGrid;
 	@FindBy(xpath = "//div[@id='pushengage-subscription-overlay-close-button']") WebElement popup;
 	
+	//Closing the PopUp
 	public void closePopup(){
 		try {
 		if(popup.isDisplayed()) {
@@ -33,7 +34,7 @@ public class GymandSearchPage extends BasePage{
 		}
 	}
 
-	
+	//Searching Car Washing Services
 	public void searchText() throws InterruptedException, IOException {
 
 		ScreenShots ss = new ScreenShots(driver);
@@ -45,11 +46,13 @@ public class GymandSearchPage extends BasePage{
 		findButton.click();
 	}
 	
+	//Clicking on Free Listing
 	public void clickFreeListing() {
 		highlightElement(freeListingButton);
 		freeListingButton.click();
 	}
 	
+	//Selecting Gym Category
 	public void selectGym() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,1800)","");

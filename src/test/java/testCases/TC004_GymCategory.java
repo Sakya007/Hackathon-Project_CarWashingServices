@@ -14,6 +14,7 @@ public class TC004_GymCategory extends TC003_FreeListing{
 	public void clickGym() {
 		GymandSearchPage gsp = new GymandSearchPage(driver);
 		gsp.selectGym();
+		logger.info("--//Clicking on Gym as Category//--");
 	}
 	
 	@Test(priority = 9,groups= {"regression","master"})

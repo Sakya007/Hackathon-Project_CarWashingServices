@@ -37,6 +37,7 @@ public class CarWashPage extends BasePage {
     @FindBy(xpath = "//label[@id='loginbutton']")WebElement FBLogin;
     @FindBy(xpath="//div[@class='_li']//div[contains(@class,'pam login_error_box')]") WebElement error;
     
+    //Closing the PopUp
     public void closePopup(){
 		try {
 		if(popup.isDisplayed()) {
@@ -71,6 +72,7 @@ public class CarWashPage extends BasePage {
     int randNum = (randomNumber(size))+1;
     ScreenShots ss;
     
+    //Displaying the details of the top 5 Car Washing Services
     public void displayDetails() throws InterruptedException, IOException {
     	ExcelUtils excel = new ExcelUtils();
 		String xlfile = System.getProperty("user.dir") + "\\testData\\testdataexcel.xlsx";
@@ -107,6 +109,7 @@ public class CarWashPage extends BasePage {
 		}
     }
     
+    //Writing review, giving report and sharing
     public void writeReviewReportShare() throws InterruptedException, IOException {
     	
     	ScreenShots sc = new ScreenShots(driver);
@@ -195,7 +198,8 @@ public class CarWashPage extends BasePage {
     	}
     	return val;
     }
-
+    
+    //Taking random Car Washing Services
     public static int randomNumber(int num) {
     	Random random = new Random();
     	int randomNo = (random.nextInt(num))+1;
@@ -203,6 +207,7 @@ public class CarWashPage extends BasePage {
 
     }
     
+    //Navigating back to the previous page
     public void clickBack() {
     	driver.navigate().back();
     }

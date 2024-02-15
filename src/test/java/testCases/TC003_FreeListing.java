@@ -13,8 +13,7 @@ public class TC003_FreeListing extends TC002_SearchandFind{
 	@Test(priority=6,groups= {"regression","master"})
 	public void clickfreelisting() {
 		GymandSearchPage gp = new GymandSearchPage(driver);
-		gp.clickFreeListing();
-		
+		gp.clickFreeListing();	
 	}
 	
 	@Test(priority=7,groups= {"regression","master"})
@@ -31,10 +30,9 @@ public class TC003_FreeListing extends TC002_SearchandFind{
 			String error_msg = fp.freeListingErrorMsg();
 			System.out.println("FreeListing Error Message : " + error_msg);
 			fp.cross();
-			
-			
 			sc.screenshot("listing");
-		}catch(Exception e) {
+		}
+		catch(Exception e) {
 			e.printStackTrace();
 		}
 		finally {
